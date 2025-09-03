@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amazon - Mock Homepage</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #eaeaea; }
+        .navbar {
+            background: #131921;
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .navbar img {
+            height: 40px;
+            margin-right: 20px;
+        }
+        .search-bar {
+            flex: 1;
+            display: flex;
+        }
+        .search-bar input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+        }
+        .search-bar button {
+            padding: 8px 16px;
+            background: orange;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        .cart {
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        .main {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 6px;
+        }
+        .product {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+        .product img {
+            width: 120px;
+            margin-right: 25px;
+            border-radius: 4px;
+        }
+        .product-details {
+            flex: 1;
+        }
+        .product-title { font-size: 18px; font-weight: bold; }
+        .product-price { color: #b12704; font-size: 16px; margin-top: 5px; }
+        .buy-btn {
+            background: #ffd814;
+            border: 1px solid #fcd200;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+        <div class="search-bar">
+            <input type="text" placeholder="Search Amazon">
+            <button>Search</button>
+        </div>
+        <div class="cart">🛒 Cart</div>
+    </div>
+    <div class="main">
+        <h2>Featured Products</h2>
+        <div class="product">
+            <
