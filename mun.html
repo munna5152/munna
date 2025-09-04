@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sample Google Form Clone</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f5f5f5; }
+    .form-container {
+      background: #fff;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    h2 { text-align: center; color: #4285f4; }
+    label { display: block; margin-top: 20px; font-weight: 500; }
+    input[type="text"], input[type="email"], select, textarea {
+      width: 100%; padding: 10px; margin-top: 6px; border-radius: 4px;
+      border: 1px solid #ccc; font-size: 16px;
+    }
+    input[type="radio"], input[type="checkbox"] {
+      margin-right: 8px;
+    }
+    .options { margin-top: 10px; }
+    button {
+      background: #4285f4; color: #fff; border: none; padding: 12px 28px;
+      margin-top: 24px; border-radius: 4px; font-size: 16px; cursor: pointer;
+      display: block; width: 100%;
+    }
+    button:hover { background: #357ae8; }
+    .required { color: red; }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Feedback Form</h2>
+    <form action="#" method="post" autocomplete="off">
+      <!-- Name -->
+      <label for="name">Full Name <span class="required">*</span></label>
+      <input type="text" id="name" name="name" required>
+      
+      <!-- Email -->
+      <label for="email">Email Address <span class="required">*</span></label>
+      <input type="email" id="email" name="email" required>
+      
+      <!-- Gender -->
+      <label>Gender <span class="required">*</span></label>
+      <div class="options">
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male" style="display: inline;">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female" style="display: inline;">Female</label>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other" style="display: inline;">Other</label>
+      </div>
+      
+      <!-- Multiple Choice -->
+      <label>How did you hear about us?</label>
+      <div class="options">
+        <input type="radio" id="social" name="source" value="Social Media">
+        <label for="social" style="display: inline;">Social Media</label>
+        <input type="radio" id="friend" name="source" value="Friend">
+        <label for="friend" style="display: inline;">Friend</label>
+        <input type="radio" id="search" name="source" value="Search Engine">
+        <label for="search" style="display: inline;">Search Engine</label>
+        <input type="radio" id="other-source" name="source" value="Other">
+        <label for="other-source" style="display: inline;">Other</label>
+      </div>
+      
+      <!-- Checkboxes -->
+      <label>What topics are you interested in? <span class="required">*</span></label>
+      <div class="options">
+        <input type="checkbox" id="web" name="topics" value="Web Development" required>
+        <label for="web" style="display: inline;">Web Development</label>
+        <input type="checkbox" id="app" name="topics" value="App Development">
+        <label for="app" style="display: inline;">App Development</label>
+        <input type="checkbox" id="ml" name="topics" value="Machine Learning">
+        <label for="ml" style="display: inline;">Machine Learning</label>
+        <input type="checkbox" id="ai" name="topics" value="Artificial Intelligence">
+        <label for="ai" style="display: inline;">Artificial Intelligence</label>
+      </div>
+      
+      <!-- Dropdown -->
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="">--Please select--</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+        <option value="Other">Other</option>
+      </select>
+      
+      <!-- Paragraph -->
+      <label for="feedback">Your Feedback</label>
+      <textarea id="feedback" name="feedback" rows="4" placeholder="Type your feedback here..."></textarea>
+      
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
